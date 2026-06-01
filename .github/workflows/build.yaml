@@ -20,6 +20,8 @@ jobs:
         run: node -v
 
       - name: Build front
+        env:
+          CI: false
         run: |
           npm install
           npm run build
